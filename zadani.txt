@@ -1,0 +1,9 @@
+HTTP server
+Webový server bude podporovat konfigurační soubor, ve kterém lze definovat port, ip adresu, výchozí webRoot (složka na kterou bude mapována url) a url adresu, na které bude možnost server vypnout. Dále bude možnost definovat virtuální hosty a jejich webRoot.
+Na jednotlivých URL adresách bude generován obsah pomocí generátorů - pro soubory, bude vypsán jejich obsah a pro složky bude vypsána tabulka jednotlivých souborů/složek a odkaz na ně. Pokud se bude jednat o soubor s koncovkou ".php", tak se zpracuje jako php script a výstup se pošle klientovy.
+
+Server bude podporovat logování, které půjde upravovat v konfiguračním souboru. Při uvedení cesty “logFile” se zapne logování do souboru a nastavení “logLevel” bude možnost ovládat úroveň logování. (1 - logování pouze chyb, 2 - logování chyb i všech přístupů)
+
+Polymorfismus:
+Využiji ho pro mapování souborů na disku. Všechny druhy souborů a složky budou dědit z abstraktní třídy BaseFile, aby následně šli bez rozdílu jednoduše vložit do datové struktury a měli nějaké společné rozhraní.
+

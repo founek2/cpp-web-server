@@ -1,0 +1,28 @@
+Popis rozvržení tříd:
+HttpServer
+    - vytvoří socket a naslouchá cyklycky, následně obsluhuje požadavky
+    - má mapu VirtualHostů s klíčem string (jejich url)
+
+VirtualHost
+    - v konstruktoru se vytvoří Directory - to se postará o indexaci souborů
+
+Directory
+    - v Directory je mapa s BaseFile* (klíč je název souboru) -> polymorfismus (při zobrazení složky se projde mapa a vypíše se každý BaseFile (jméno, velikost a odkaz na něj))
+
+Parser
+    - statická třída s funkcemi pro parsování
+
+Logger
+    - třída pro logování do konzole/souboru dle nastavení
+
+Config parser
+    - třída pro vypársování configu a jeho uložení do mapy
+
+Request
+    - Reprezentace požadavku (dělá parsování)
+
+Response
+    - reprezentace odpovědi
+
+Socket
+    - otevření socketu a handling příchozích spojení

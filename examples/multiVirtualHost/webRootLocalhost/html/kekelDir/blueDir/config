@@ -1,0 +1,11 @@
+ipAdress: 127.0.0.1
+port: 8081
+logLevel: 3
+
+DocumentRoot: /Users/martas/Work/projects/http-server/http-server/webRootDef
+
+virtual: skalicky.cz
+  DocumentRoot: /Users/martas/Work/projects/http-server/http-server/webRootSkalicky
+
+virtual: localhost
+  DocumentRoot: /Users/martas/Work/projects/http-server/http-server/webRootLocalhost

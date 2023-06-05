@@ -1,0 +1,13 @@
+IpAdress: 127.0.0.1
+Port: 8081
+LogLevel: 3
+LogFile: /Users/martas/Work/projects/http-server/http-server/examples/multiVirtualHost/server.log
+
+DocumentRoot: /Users/martas/Work/projects/http-server/http-server/examples/multiVirtualHost/webRootDef
+ShutDownUrl: /shutDownNow
+
+virtual: skalicky.cz
+  DocumentRoot: /Users/martas/Work/projects/http-server/http-server/examples/multiVirtualHost/webRootSkalicky
+
+virtual: localhost
+  DocumentRoot: /Users/martas/Work/projects/http-server/http-server/examples/multiVirtualHost/webRootLocalhost

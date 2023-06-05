@@ -1,0 +1,1 @@
+Při implementaci Vaší semestrální práce můžete využívat knihovny třetích stran, které jsou uvedené v seznamu níže. Použití těchto knihoven není závazné, ale umožní Vám práci zpracovat zajímavějším způsobem.

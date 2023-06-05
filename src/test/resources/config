@@ -1,0 +1,8 @@
+IpAdress: 127.0.0.1
+Port: 8081
+
+virtual: skalicky.cz
+  DocumentRoot: /magic/path
+
+virtual: localhost
+  DocumentRoot: /root/ponny
